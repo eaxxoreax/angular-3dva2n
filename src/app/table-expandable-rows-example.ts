@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
+import { MatTableDataSource } from '@angular/material/table';
 
 /**
  * @title Table with expandable rows
@@ -17,10 +18,10 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
   ],
 })
 export class TableExpandableRowsExample {
-  dataSource = ELEMENT_DATA;
+  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   columnsToDisplay = ['name', 'id', 'action'];
   expandedElement: PeriodicElement | null;
-  selectedElement; PeriodicElement | null;
+  selectedElement: PeriodicElement | null;
 }
 
 export interface PeriodicElement {
