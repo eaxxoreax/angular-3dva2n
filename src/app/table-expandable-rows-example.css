@@ -1,23 +1,29 @@
-table {
+table.mat-table {
   width: 100%;
   border-spacing: 0 15px;
   border-collapse: separate;
+  background-color: rgb(19, 11, 54);
+  border-radius: 5px;
+  
 }
 
 tr.example-detail-row {
   height: 0;
+  background-color: black;
 }
 
 tr.example-element-row:not(.example-selected-row):hover {
-  background: whitesmoke;
+  background-color: rgb(27, 27, 27);
 }
 
 tr.example-element-row:not(.example-selected-row):active {
-  background: #efefef;
+  background-color: black;
 }
 
 .example-element-row td {
+  background-color: black;
   border-bottom-width: 0;
+  color: white;
 }
 
 .example-element-detail {
