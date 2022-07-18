@@ -1,6 +1,6 @@
 table {
   width: 100%;
-  border-spacing: 0 5px;
+  border-spacing: 0 15px;
   border-collapse: separate;
 }
 
@@ -8,11 +8,11 @@ tr.example-detail-row {
   height: 0;
 }
 
-tr.example-element-row:not(.example-expanded-row):hover {
+tr.example-element-row:not(.example-selected-row):hover {
   background: whitesmoke;
 }
 
-tr.example-element-row:not(.example-expanded-row):active {
+tr.example-element-row:not(.example-selected-row):active {
   background: #efefef;
 }
 
