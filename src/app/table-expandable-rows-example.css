@@ -10,6 +10,10 @@ table.mat-table {
 tr.example-detail-row {
   height: 0;
   background-color: black;
+
+  td {
+    color: white;
+  }
 }
 
 tr.example-element-row:not(.example-selected-row):hover {
